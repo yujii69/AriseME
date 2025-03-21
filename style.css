@@ -1,78 +1,89 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #121212;
-    color: #fff0f0;
     margin: 0;
     padding: 0;
+    background-image: url('https://t3.ftcdn.net/jpg/04/71/00/20/360_F_471002062_tCBbTqeeMhHgMfCW86mQhdgpETooy3ID.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+.background-section {
+    height: 50vh; 
+    width: 100vw; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    backdrop-filter: brightness(0.7);
+}
+
+.center-box {
+    width: 60%;
+    max-width: 600px; 
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 20px;
+    border: 4px solid white; 
+    border-radius: 10px; 
+    text-align: center;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3); 
+}
+
+header {
+    background-color: #000000;
+    padding: 10px 0;
     text-align: center;
 }
 
-.navbar {
-    background-color: #cc1111;
-    padding: 10px 0;
-}
-
 .navbar ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    justify-content: center;
 }
 
-.navbar li {
+.navbar ul li {
+    display: inline;
     margin: 0 15px;
 }
 
-.navbar a {
-    color: #e6dfdce8;
+.navbar ul li a {
     text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s;
+    color: white;
+    font-weight: bold;
 }
 
-.navbar a:hover {
-    color: #0d0397;
+.navbar ul li a:hover {
+    color: lightgray;
 }
-
 
 section {
-    padding: 50px 20px;
-    border-bottom: 1px solid #be3013ec;
-}
-
-.profile {
-    max-width: 800px;
-    margin: auto;
-    background-color: #222;
+    text-align: center;
     padding: 20px;
+    margin: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(221, 15, 15, 0.1);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .profile img {
     border-radius: 10px;
-    border: 2px solid #d30d0d;
+    border: 2px solid rgb(211, 0, 0);
+    margin-bottom: 10px;
 }
 
-.profile h1 {
-    color: #ff0000;
+h1 {
+    color: lightblue;
 }
 
-.profile p {
-    text-align: justify;
-    line-height: 1.5;
-}
-
-/* Footer Styling */
 footer {
-    background-color: #1f1f1f;
-    padding: 20px;
-    margin-top: 20px;
     text-align: center;
+    padding: 10px;
+    background-color: #000000;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
-
-footer h2 {
-    color: #ff4500;
-}
-
